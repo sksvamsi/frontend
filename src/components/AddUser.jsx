@@ -8,7 +8,7 @@ const AddUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${process.env.REACT_APP_API_URL}/api/add`, { name, email })
+    axios.post("https://backend-production-ff9d.up.railway.app/api/add", { name, email })
       .then(response => {
         console.log(response.data);
       });
