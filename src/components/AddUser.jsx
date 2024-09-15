@@ -8,7 +8,7 @@ const AddUser = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:9092/api/add', { name, email })
+    axios.post(`${process.env.REACT_APP_API_URL}/api/add`, { name, email })
       .then(response => {
         console.log(response.data);
       });
