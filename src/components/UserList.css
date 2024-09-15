@@ -1,0 +1,58 @@
+/* Styles for UserList Component */
+.userlist-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #f9f9f9;
+  }
+  
+  .userlist-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .user-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  .user-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(50% - 1rem);
+    max-width: 300px;
+  }
+  
+  .user-name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .user-email {
+    margin-bottom: 1rem;
+  }
+  
+  .view-profile-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .view-profile-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .user-card {
+      flex: 1 1 100%;
+    }
+  }
+  

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './AddUser.css';
 
 const AddUser = () => {
   const [name, setName] = useState('');
@@ -15,14 +15,14 @@ const AddUser = () => {
   };
 
   return (
-    <div className="container mt-5">
-      <h1 className="text-center mb-4">Add New User</h1>
-      <form onSubmit={handleSubmit} className="w-50 mx-auto">
-        <div className="mb-3">
+    <div className="form-container">
+      <h1 className="form-title">Add New User</h1>
+      <form onSubmit={handleSubmit} className="form-content">
+        <div className="form-group">
           <label htmlFor="name" className="form-label">Name</label>
           <input
             type="text"
-            className="form-control"
+            className="form-input"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -30,11 +30,11 @@ const AddUser = () => {
             required
           />
         </div>
-        <div className="mb-3">
+        <div className="form-group">
           <label htmlFor="email" className="form-label">Email</label>
           <input
             type="email"
-            className="form-control"
+            className="form-input"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -42,7 +42,7 @@ const AddUser = () => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-primary w-100">Add User</button>
+        <button type="submit" className="form-button">Add User</button>
       </form>
     </div>
   );

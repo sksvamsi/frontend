@@ -1,0 +1,62 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #4CAF50;
+    padding: 1rem;
+    color: white;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  /* Styling for nav items */
+  .nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    margin-left: auto; /* Ensure nav items are pushed to the right */
+  }
+  
+  .nav-links .nav-link {
+    margin-left: 15px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-links .nav-link:hover {
+    background-color: #45a049;
+    color: #fff;
+  }
+  
+  /* Responsive behavior */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: row; /* Keep row direction in mobile */
+      justify-content: space-between; /* Ensure brand is on left, nav items on right */
+    }
+  
+    .nav-links {
+      flex-direction: row; /* Ensure nav items stay in row */
+    }
+  
+    .nav-links .nav-link {
+      margin-left: 10px;
+      width: auto;
+      padding: 0.5rem 1rem;
+      text-align: right; /* Align text to the right */
+    }
+  }
+  
