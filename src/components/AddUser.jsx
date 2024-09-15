@@ -27,7 +27,7 @@ const AddUser = () => {
         // Clear success message after 5 seconds
         setTimeout(() => {
           setSuccessMessage('');
-        }, 5000);
+        }, 2000);
       })
       .catch(error => {
         console.error('There was an error adding the user:', error);
