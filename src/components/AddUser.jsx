@@ -22,12 +22,12 @@ const AddUser = () => {
         // Navigate to home page after 5 seconds
         setTimeout(() => {
           navigate('/'); // Navigate to home page
-        }, 5000);
+        }, 2000);
 
         // Clear success message after 5 seconds
         setTimeout(() => {
           setSuccessMessage('');
-        }, 2000);
+        }, 1000);
       })
       .catch(error => {
         console.error('There was an error adding the user:', error);
