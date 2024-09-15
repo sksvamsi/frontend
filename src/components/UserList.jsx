@@ -6,7 +6,7 @@ const UserList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://backend-production-ff9d.up.railway.app/api/users")
+    axios.get("https://accomplished-quietude-production.up.railway.app/")
       .then(response => {
         setUsers(response.data);
       })
